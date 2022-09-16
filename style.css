@@ -137,8 +137,8 @@ Hero and Service Section Start
   min-height: 100vh;
   height: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 .section-hero{
     position: relative;
@@ -149,25 +149,26 @@ Hero and Service Section Start
     min-height: 100vh;
     height: 100%;
     padding: 250px 132px 35px;
-    gap:108px
+    gap:108px;
+    /* align-items: flex-start; */
 }
 .section-hero .left-hero,.section-hero .right-hero{
   /* width: 48%; */
   flex:1;
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
 }
 .left-hero h1{
 font-size: 70px;
 line-height: 82px;
 }
-.section-hero .right-hero div,.section-hero .left-hero div{
+/* .section-hero .right-hero div,.section-hero .left-hero div{ */
+  /* height: 100%; */
+  /* width: 100%; */
+/* } */
+.section-hero .right-hero img{
   height: 100%;
   width: 100%;
-}
-.section-hero .right-hero img{
-  height: auto;
-  width: auto;
 }
 .section-hero .left-hero p{
 font-size: 18px;
