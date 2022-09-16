@@ -131,8 +131,8 @@ body.body-mobilenav{
 /* ===========================================
 Hero and Service Section Start
 ======================================= */
-.section-hero,
-.section-services {
+.section-hero
+{
   background-color: #1AC073;
   min-height: 100vh;
   height: auto;
@@ -177,10 +177,258 @@ margin: 32px 0 40px 0;
 max-width: 80%;
 letter-spacing: -0.012em;
 }
-.section-services {
-  background: #f3f0ff;
+.heading{
+  line-height: 24px;
+  letter-spacing: -0.012em;
+  color: #000000;
+  font-weight: 800;
+  font-size: 40px;
+}
+.section-kitchen {
+  width: 100vw;
+  height: auto;
+  background: #F7F8FA;
+  padding: 105px 130px 0px 130px;
+}
+.kitchen-home {
+  width: auto;
+  height: 100%;
+  background: #F7F8FA;
+  /* display: flex; */
+  /* background: #F7F8FA; */
+}
+.kitchen-cards {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+}
+.card{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top:39px;
+  width: 277px;
+}
+.description{
+  background: #fff;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  /* width: 277px;
+  height: 87px; */
+}
+.des{
+  width: fit-content;
+}
+.title,.price,.point{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.012em;
+  color: #1B1C21;
+}
+.point{
+  
+font-size: 12px;
+
+}
+.add{
+  width: fit-content;
+  border-radius: 5px;
+}
+.internal-description{
+  margin: 15.5px;
+}
+.top-description{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.down-description{
+  display: flex;
+  justify-content: space-between;
+  /* width: 50%; */
+  
+}
+.left-down-description{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:8px;
+  
+}
+.rating{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 4px;
+  gap: 4px;
+  
+  /* width: 45px;
+  height: 20px; */
+  
+  background: #F7F8FA;
+  
+  
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  
+  
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
+.rating-value{
+  /* width: 17px;
+  height: 20px; */
+
+  
+  line-height: 20px;
+
+
+  letter-spacing: -0.012em;
+
+
+
+  color: #1B1C21; 
+
+
+
+
+  flex: none;
+  order: 1;
+  flex-grow: 0; 
+}
+.time-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 3px;
+  gap: 4px;
+  
+  width: 68px;
+  height: 20px;
+  
+  background: #BEBEBE;
+  /* Normal outer */
+  
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+}
+.time{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 4px;
+  gap: 4px;
+  
+  width: 62px;
+  height: 20px;
+  
+  background: #F7F8FA;
+  border-radius: 5px;
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+  width: fit-content;
+}
+.time-value{
+  width: 30px;
+height: 20px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+/* identical to box height, or 167% */
+
+letter-spacing: -0.012em;
+
+/* Text/Black Body caption */
+
+color: #1B1C21;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.time-unit{
+  width: 20px;
+height: 20px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+/* identical to box height, or 167% */
+
+letter-spacing: -0.012em;
+
+/* Text/Black Body caption */
+
+color: #1B1C21;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.right-down-description{
+  
+  
+}
+.kitchen-img {
+    width: 100%;
+}
+
+.kitchen-tag{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 3px;
+  background: #F3BA00;
+  border-radius: 10px 0px 0px 0px;
+}
+
+
+.popular-items{
+  margin: 122px 0 0 0;
+  width: auto;
+  height: 100%;
+  background: #F7F8FA;
+}
+.heading{
+  text-align: center;
+  margin: 0 0 37.5px 0;
+}
 /* ===========================================
 Responsive Codes 
 ======================================= */
