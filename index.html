@@ -6,7 +6,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>thapa Technical</title>
+    <title>Assignment JTG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -20,18 +23,23 @@
 
       <nav class="navbar">
         <ul class="navbar-list">
-          <li><a class="navbar-link" href="#">Home</a></li>
-          <li><a class="navbar-link" href="#">About</a></li>
-          <li><a class="navbar-link" href="#">Menu</a></li>
-          <li><a class="navbar-link" href="#">Blog</a></li>
+          <li><a class="navbar-link font-roboto" href="#">Home</a></li>
+          <li><a class="navbar-link font-roboto" href="#">About</a></li>
+          <li><a class="navbar-link font-roboto" href="#">Menu</a></li>
+          <li><a class="navbar-link font-roboto" href="#">Blog</a></li>
           <li>
             <a
-              class="navbar-link"
+              class="navbar-link font-roboto"
               href="#"
               target="_blank"
               >Contact</a
             >
           </li>
+        </ul>
+
+        <ul class="navbar-list">
+          <li><a class="navbar-icons"><img src="Assets/icons/Search.svg" alt="serach"></a></li>
+          <li><a class="navbar-icons"><img src="Assets/icons/Cart.svg" alt="cart"></a></li>
         </ul>
       </nav>
 
@@ -46,8 +54,21 @@
     ========================================  -->
     <main>
       <section class="section-hero">
-        <div class="hero">
-          <p>#</p>
+        <div class="left-hero">
+          <div>
+          <h1 class="font-roboto">Authentic Home food in India</h1>
+          <p  class="font-roboto">JTGeats is a courie service in which authentic home
+          cook food is delivered to a customer.</p>
+          <div>
+          <input class="search" placeholder="search food you love">
+          <input class="btn" type="button" value="Search">
+        </div>
+      </div>
+        </div>
+        <div class="right-hero">
+          <div>
+          <img src="Assets/icons/cooking.svg">
+        </div>
         </div>
       </section>
     </main>
