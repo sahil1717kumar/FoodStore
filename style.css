@@ -30,7 +30,8 @@ body.body-mobilenav{
 }
 .landing{
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     color: #f3f0ff;
 }
 .header {
@@ -51,7 +52,35 @@ body.body-mobilenav{
 .header .logo {
   /* height:  */
 }
-
+.landing-input{
+  display: flex;
+  width: 398px;
+  height: 58px;
+  block-size: fit-content; 
+  /* border-radius: 10px; */
+}
+.search{
+  width:286px;
+  height: 58px;
+  text-indent: 22px;
+  border: 0px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.search:placeholder{
+  width: 136px;
+  height: 20px;
+  color: #929292;
+}
+.btn{
+  width: 112px;
+  height: 58px;
+  background: #F3BA00;
+  color: #fff;
+  border: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 .navbar{
   display: flex;
   justify-content: space-between;
@@ -105,18 +134,20 @@ Hero and Service Section Start
 .section-hero,
 .section-services {
   background-color: #1AC073;
-  height: 79vh;
+  min-height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .section-hero{
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100vw;
     z-index: 1;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     padding: 250px 132px 35px;
     gap:108px
 }
@@ -135,8 +166,8 @@ line-height: 82px;
   width: 100%;
 }
 .section-hero .right-hero img{
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: auto;
 }
 .section-hero .left-hero p{
 font-size: 18px;
