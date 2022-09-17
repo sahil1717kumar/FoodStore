@@ -646,6 +646,10 @@
       </div>
     </div>
 
+    <!-- requesting  the dish -->
+    <div class="request">
+      <input type="button" value="Request a Dish" class="request-dish font-roboto">
+    </div>
   </div>
   </div>
 
@@ -662,26 +666,34 @@
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:50,
-    autoWidth:true,
-    stagePadding: 50,
-    responsiveClass:true,
-    nav:true ,
-    dots:false,
-    dashes:false,
-    responsive:{
-        0:{
-            items:1,
-            
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 50,
+      autoWidth: true,
+      stagePadding: 50,
+      responsiveClass: true,
+      nav: true,
+      dots: false,
+      dashes: false,
+      navText: [`
+      <svg width="21" height="31" viewBox="0 0 21 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.95939 17.7059C0.594848 16.5108 0.594847 14.3875 1.95939 13.1924L15.5966 1.24827C17.5361 -0.450387 20.5732 0.926898 20.5732 3.50505L20.5732 27.3932C20.5732 29.9714 17.5361 31.3487 15.5966 29.65L1.95939 17.7059Z" fill="#1AC073"/>
+      </svg>`
+        , `
+      <svg width="21" height="31" viewBox="0 0 21 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.0406 13.2941C20.4052 14.4892 20.4052 16.6125 19.0406 17.8077L5.40338 29.7517C3.46393 31.4504 0.426783 30.0731 0.426783 27.495L0.426784 3.60678C0.426784 1.02863 3.46393 -0.348662 5.40338 1.34999L19.0406 13.2941Z" fill="#1AC073"/>
+      </svg>`],
+      responsive: {
+        0: {
+          items: 1,
+
         },
-        600:{
-            items:3,
-            
+        600: {
+          items: 3,
+
         }
-    }
-})
+      }
+    })
   </script>
 </body>
 
