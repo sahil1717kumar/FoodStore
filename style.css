@@ -5,16 +5,18 @@
   /* font-family: ; */
 }
 
-html {
-  /* font-size: 62.5%; */
-  /* 1rem = 10px */
+/* html {
+  font-size: 62.5%;
+  1rem = 10px;
   overflow-x: hidden;
-}
+} */
 
 body {
   overflow-x: hidden;
 }
-
+/* body::-webkit-scrollbar {
+  display: none;
+} */
 body.body-mobilenav {
   overflow: hidden;
   height: 100vh;
@@ -579,7 +581,107 @@ Hero and Service Section Start
   display: flex;
   justify-content: center;
   padding: 87px 0 81px 0;
-  background-color:#F7F8FA ;
+  background-color: #F7F8FA;
+}
+
+.video-section {
+  width: 100vw;
+  height: auto;
+  background: #F7F8FA;
+  padding: 80px 0px 0px 0px;
+  /* width: fit-content; */
+  position: relative;
+}
+
+.video-heading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.video-section-heading {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+.green-container{
+  margin:272px 0 0 0;
+  background-color: #C7EACC;
+  height: 344px;
+}
+.video-top-heading {
+  margin-bottom: 10px;
+}
+
+
+
+.para {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  /* second-text-color */
+
+  color: #737373;
+}
+
+.video-container {
+  width: 61vw;
+  height: 55vh;
+  position: relative;
+  /* width: 877px;
+  position: absolute;
+  top: 294px;
+  right: 281.5px;
+  bottom: 124px;
+  left: 281.5px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%); */
+  /* position: relative; */
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  /* position: absolute; */
+  object-fit: cover;
+}
+.video-main{
+  /* left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+
+}
+.video-main:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 40%;
+  top: 70%;
+  left: 0;
+  /* transform: translateY(-50%); */
+  background: #C7EACC;
+}
+.video-button {
+  display: flex;
+  right: 40%;
+  position: absolute;
+  top: 40%;
 }
 
 /* ===========================================
