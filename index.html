@@ -19,8 +19,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -672,36 +672,92 @@
       </div>
     </div>
     <div class="video-main">
-    <div class="video-container">
-      <video  class="content">
-        <source src="Assets/video/foodvideos.mp4" type="video/mp4">
-      </video>
-      <div class="video-button">
-        <svg width="97.5px" height="97.5px" viewBox="0 0 138 139" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g filter="url(#filter0_d_227_80)">
-          <circle cx="65.25" cy="64.5" r="48.75" fill="#1AC073"/>
-          <path d="M82.265 60.9489C83.6296 62.144 83.6296 64.2673 82.265 65.4624L60.9222 84.1555C58.9827 85.8541 55.9456 84.4768 55.9456 81.8987L55.9456 44.5126C55.9456 41.9344 58.9827 40.5572 60.9222 42.2558L82.265 60.9489Z" fill="white"/>
-          </g>
-          <defs>
-          <filter id="filter0_d_227_80" x="0.5" y="0.75" width="137.5" height="137.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-          <feOffset dx="4" dy="5"/>
-          <feGaussianBlur stdDeviation="10"/>
-          <feComposite in2="hardAlpha" operator="out"/>
-          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
-          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_227_80"/>
-          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_227_80" result="shape"/>
-          </filter>
-          </defs>
-        </svg>
+      <div class="video-container">
+        <video class="content">
+          <source src="Assets/video/foodvideos.mp4" type="video/mp4">
+        </video>
+        <div class="video-button">
+          <svg width="97.5px" height="97.5px" viewBox="0 0 138 139" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_227_80)">
+              <circle cx="65.25" cy="64.5" r="48.75" fill="#1AC073" />
+              <path
+                d="M82.265 60.9489C83.6296 62.144 83.6296 64.2673 82.265 65.4624L60.9222 84.1555C58.9827 85.8541 55.9456 84.4768 55.9456 81.8987L55.9456 44.5126C55.9456 41.9344 58.9827 40.5572 60.9222 42.2558L82.265 60.9489Z"
+                fill="white" />
+            </g>
+            <defs>
+              <filter id="filter0_d_227_80" x="0.5" y="0.75" width="137.5" height="137.5" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha" />
+                <feOffset dx="4" dy="5" />
+                <feGaussianBlur stdDeviation="10" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_227_80" />
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_227_80" result="shape" />
+              </filter>
+            </defs>
+          </svg>
+        </div>
       </div>
-    </div> <!-- need to be changed  -->
-  </div>
-     <!-- <div class="green-container"></div> -->
-    
+    </div>
+
+
   </div>
 
+  <!-- form section -->
+  <div class="form-section">
+    <div class="form">
+      <p class="font-roboto form-heading">Do you have a question</p>
+      <p class="font-roboto form-heading">or want to become a seller?</p>
+      <p class="font-roboto form-para">Fill this form and our manager will contact you next 48 hours.</p>
+      <form action="#" class="contact">
+        <input type="text" class="name-mail name font-roboto" placeholder="Your Name">
+        <input type="text" class="name-mail email font-roboto" placeholder="Your e-mail">
+        <input type="text" class="message font-roboto" placeholder="Your message">
+        <input type="text" class="submit-btn font-roboto" value="Submit">
+      </form>
+    </div>
+    <div class="form-pic">
+      <img src="Assets/icons/Food delivery illustration.svg" alt="" class="food-delivery">
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="footer-div">
+    <footer class="footer">
+      <div>
+      <img src="Assets/icons/Logo.svg" alt="logo" class="logo" />
+    </div>
+      <div class="">
+        <ul class="footer-list">
+          <li><a class="footer-link font-roboto" href="#">Home</a></li>
+          <li><a class="footer-link font-roboto" href="#">About</a></li>
+          <li><a class="footer-link font-roboto" href="#">Menu</a></li>
+          <li><a class="footer-link font-roboto" href="#">Blog</a></li>
+          <li>
+            <a class="footer-link font-roboto" href="#" target="_blank">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+      <div>
+        
+        <ul class="icon-list">
+          <li><a class="navbar-icons"><img src="Assets/icons/Facebook.svg" alt="serach"></a></li>
+          <li><a class="navbar-icons"><img src="Assets/icons/instagram.svg" alt="cart"></a></li>
+        </ul>
+      </div>
+      <!-- <div class="mobile-navbar-btn">
+        <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+        <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+      </div> -->
+      
+    </footer>
+    <div class="line"></div>
+    </div>
+  </div>
   <!-- ======================================== 
           Our JavaScript Section Start  
     ========================================  -->

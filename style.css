@@ -50,11 +50,50 @@ body.body-mobilenav {
   align-items: center;
   background-color: #1AC073;
 }
-
+.footer{
+  width: 100vw;
+  padding: 38px 129px 31px;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 35rem; */
+  align-items: center;
+  background-color: #1AC073;
+}
+.line{
+  /* width: 81.97vw; */
+  margin: 0 8.95vw 0 8.96vw;
+  height: 0px;
+  border: 1px solid #FFFFFF;
+  /* margin-top: 3.87vh; */
+}
+.footer-div{
+  height: 17.12vh;
+  background-color: #1AC073;
+}
 .header .logo {
   /* height:  */
 }
-
+.footer-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  align-items: center;
+}
+.footer-link:link, .footer-link:visited {
+  display: inline-block;
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  color: #fff !important;
+  transition: all 0.3s;
+  font-size: 18px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.012em !important;
+}
+.icon-list{
+  list-style: none;
+    display: flex;
+    gap: 13.25px;
+}
 .landing-input {
   display: flex;
   width: 398px;
@@ -638,8 +677,8 @@ Hero and Service Section Start
 }
 
 .video-container {
-  width: 61vw;
-  height: 55vh;
+  width: 60.903vw;
+  height: 55.25vh;
   position: relative;
   /* width: 877px;
   position: absolute;
@@ -671,7 +710,7 @@ Hero and Service Section Start
   position: absolute;
   content: "";
   width: 100%;
-  height: 40%;
+  height: 46.74%;
   top: 70%;
   left: 0;
   /* transform: translateY(-50%); */
@@ -679,10 +718,102 @@ Hero and Service Section Start
 }
 .video-button {
   display: flex;
-  right: 40%;
+  top: 50%;
+  left: 50%;
   position: absolute;
-  top: 40%;
+  /* top: 40%; */
+  transform: translate(-50%, -50%);
 }
+.form-section{
+  display: flex;
+  padding-top: 28.06vh;
+  justify-content: center;
+  background: #F7F8FA;
+}
+.form{
+  margin-left: 16.06vh;
+}
+.form-pic{
+  margin-right: 16.18vh;
+}
+.name-mail{
+  width: 20.834vw;
+  height: 7.25vh;
+  text-indent: 1.52vw;
+  /* gap: 1.11vw; */
+}
+.email{
+  margin-left: 1.11vw;
+}
+.message{
+  width: 42.84vw;
+  height: 20.5vh;
+  margin-top: 3.125vh;
+}
+.message::placeholder{
+  position: absolute;
+width: 6.94vw;
+height: 2.5vh;
+left: 1.52vw;
+top: 2.375vh;
+}
+.submit-btn{
+  width: 14.58vw;
+  height: 7.25vh;
+  margin-top: 2.75vh;
+  text-align: center;
+  margin-bottom: 8.875vh;
+}
+.name-mail,.message,.submit-btn{
+  border: 0;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.form-heading{
+  font-weight: 400;
+font-size: 24px;
+line-height: 24px;
+margin-bottom: 0.625vh;
+/* or 100% */
+
+letter-spacing: -0.012em;
+
+/* Text/Black Heading title */
+
+color: #101115;
+}
+.form-para{
+  font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+/* identical to box height, or 167% */
+margin-bottom: 4vh;
+letter-spacing: -0.012em;
+
+/* Text/Black Body caption */
+
+color: #1B1C21;
+}
+.submit-btn{
+  background: #1AC073;
+border-radius: 10px;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+
+letter-spacing: -0.012em;
+
+/* White */
+
+color: #FFFFFF;
+}
+.line{
+
+}
+/* .form{
+
+} */
 
 /* ===========================================
 Responsive Codes 
