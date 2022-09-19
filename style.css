@@ -786,7 +786,7 @@ Hero and Service Section Start
 }
 .form-pic {
   /* margin-right: 16.18vh; */
-  width: 49%;
+  width: 39%;
   height: 100%;
 }
 .form-pic img {
@@ -1216,6 +1216,9 @@ Responsive Codes
 .section-hero {
   padding: 35px 30px 35px;
 }
-
+.left-hero h1 {
+  font-size: 55px;
+  line-height: 60px;
+}
 
 }
