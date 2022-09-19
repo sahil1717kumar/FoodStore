@@ -66,7 +66,8 @@ body.body-mobilenav {
   /* width: 81.97vw; */
   margin: 0 8.95vw 0 8.96vw;
   height: 0px;
-  border: 1px solid #FFFFFF;
+  height: 1px;
+  background: #fff;
   /* margin-top: 3.87vh; */
 }
 
@@ -75,9 +76,9 @@ body.body-mobilenav {
   background-color: #1AC073;
 }
 
-.header .logo {
-  /* height:  */
-}
+/* .header .logo {
+  height: 
+} */
 
 .footer-list {
   display: flex;
@@ -484,7 +485,7 @@ Hero and Service Section Start
   flex-grow: 0;
 }
 
-.right-down-description {}
+/* .right-down-description {} */
 
 .kitchen-img {
   width: 100%;
@@ -846,7 +847,7 @@ Hero and Service Section Start
   z-index: 1000;
   background: rgba(0, 0, 0, 0.35);
 }
-.line {}
+/* .line {} */
 
 .order-modal {
   display: none;
