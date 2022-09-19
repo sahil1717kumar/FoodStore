@@ -25,6 +25,43 @@
 </head>
 
 <body>
+  <div class="modal-back">
+    <div class="order-modal">
+      <div class="order-modal-heading font-roboto">
+        <p>Request a Dish</p>
+      </div>
+      <div class="name-image">
+        <div class="order-name font-roboto">
+          <label for="order-name-input">Name*</label>
+          <input type="text" class="order-name-input" placeholder="Enter name of the dish">
+        </div>
+        <div class="order-image font-roboto">
+          <label for="order-image-input">Upload an image</label>
+          <input type="text" class="order-image-input" placeholder="Paste a URL">
+        </div>
+      </div>
+      <div class="order-btn">
+        <input type="submit" class="cancel-order" value="Cancel">
+        <input type="submit" class="submit-order" value="Submit Request">
+      </div>
+    </div>
+
+    <!-- cart -->
+    <div class="cart-container">
+      <div class="cart-image">
+        <img src="Assets/icons/shopping-bag.svg" alt="" class="cart-image-svg">
+      </div>
+      <div class="cart-text">
+        <div class="cart-text-heading font-roboto">
+          <p>Cart is Empty</p>
+        </div>
+        <div class="cart-text-bottom font-roboto">Add some items to the cart to checkout</div>
+      </div>
+      <div class="back-to-menu">
+        <input type="submit" class="back-to-menu-btn font-roboto" value="Back to menu">
+      </div>
+    </div>
+  </div>
   <section class="landing">
     <header class="header">
       <img src="Assets/icons/Logo.svg" alt="logo" class="logo" />
@@ -41,8 +78,8 @@
         </ul>
 
         <ul class="navbar-list">
-          <li><a class="navbar-icons"><img src="Assets/icons/Search.svg" alt="serach"></a></li>
-          <li><a class="navbar-icons"><img src="Assets/icons/Cart.svg" alt="cart"></a></li>
+          <li><a class="navbar-icons search-btn"><img src="Assets/icons/Search.svg" alt="serach"></a></li>
+          <li><a class="navbar-icons cart-btn"><img src="Assets/icons/Cart.svg" alt="cart"></a></li>
         </ul>
       </nav>
 
@@ -51,6 +88,8 @@
         <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
       </div>
     </header>
+    <!-- modal -->
+    <!-- order -->
 
     <!-- ======================================== 
           Our Main Hero Section Start  
@@ -74,7 +113,11 @@
           </div>
         </div>
       </section>
+
+      <!-- modal -->
+
     </main>
+
   </section>
   <!-- ======================================== 
           Our Service Section Start  
@@ -728,8 +771,8 @@
   <div class="footer-div">
     <footer class="footer">
       <div>
-      <img src="Assets/icons/Logo.svg" alt="logo" class="logo" />
-    </div>
+        <img src="Assets/icons/Logo.svg" alt="logo" class="logo" />
+      </div>
       <div class="">
         <ul class="footer-list">
           <li><a class="footer-link font-roboto" href="#">Home</a></li>
@@ -743,7 +786,7 @@
 
       </div>
       <div>
-        
+
         <ul class="icon-list">
           <li><a class="navbar-icons"><img src="Assets/icons/Facebook.svg" alt="serach"></a></li>
           <li><a class="navbar-icons"><img src="Assets/icons/instagram.svg" alt="cart"></a></li>
@@ -753,10 +796,10 @@
         <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
         <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
       </div> -->
-      
+
     </footer>
     <div class="line"></div>
-    </div>
+  </div>
   </div>
   <!-- ======================================== 
           Our JavaScript Section Start  
