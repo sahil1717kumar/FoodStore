@@ -802,7 +802,9 @@ Hero and Service Section Start
 .name-mail {
   width: 49%;
   height: 7.25vh;
-  text-indent: 1.52vw;
+  /* text-indent: 1.52vw;
+   */
+   padding: 19px 22px;
   /* gap: 1.11vw; */
 }
 
@@ -822,13 +824,13 @@ Hero and Service Section Start
   padding: 19px 22px;
 }
 
-.message::placeholder {
+/* .message::placeholder {
   position: absolute;
   width: 6.94vw;
   height: 2.5vh;
   left: 1.52vw;
   top: 2.375vh;
-}
+} */
 
 .submit-btn {
   width: 14.58vw;
