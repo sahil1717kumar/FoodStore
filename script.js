@@ -2,6 +2,7 @@ const mobile_nav = document.querySelector(".mobile-navbar-btn");
 const nav_header = document.querySelector(".header");
 const body = document.querySelector("body");
 
+const video_player = document.querySelector(".video-container")
 const video_button = document.querySelector(".video-button")
 const content = document.querySelector(".content");
 var flag = 1;
@@ -34,13 +35,15 @@ search.addEventListener("click",function(){
   modalBack.style.display = "block"
   searchContainer.style.display = "block"
 })
-video_button.addEventListener("click",function(){
+video_player.addEventListener("click",function(){
   if(flag){
     content.play()
+    video_button.style.visibility = "hidden"
     flag = 0;
   }
   else{
     content.pause()
+    video_button.style.visibility = "visible"
     flag = 1;
   }
   
