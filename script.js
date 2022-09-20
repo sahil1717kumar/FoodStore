@@ -15,22 +15,22 @@ const cart = document.querySelector(".cart-btn")
 const search = document.querySelector(".search-btn")
 const cancelBtn = document.querySelector(".cancel-order")
 menuBtn.addEventListener("click",function(){
-  bbody.style.overflow = "auto"
+  bbody.style.overflowY = "auto"
   cartContainer.style.display = "none"
   modalBack.style.display = "none"
 })
 cart.addEventListener("click",function(){
-  bbody.style.overflow = "hidden"
+  bbody.style.overflowY = "hidden"
   modalBack.style.display = "block"
   cartContainer.style.display = "flex"
 })
 cancelBtn.addEventListener("click",function(){
-  bbody.style.overflow = "auto"
+  bbody.style.overflowY = "auto"
   searchContainer.style.display = "none"
   modalBack.style.display = "none"
 })
 search.addEventListener("click",function(){
-  bbody.style.overflow = "hidden"
+  bbody.style.overflowY = "hidden"
   modalBack.style.display = "block"
   searchContainer.style.display = "block"
 })
