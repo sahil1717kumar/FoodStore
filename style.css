@@ -543,7 +543,8 @@ Hero and Service Section Start
 
 .slider {
   position: relative;
-
+  display: flex;
+  justify-content: center;
 }
 
 .popular {
@@ -569,6 +570,8 @@ Hero and Service Section Start
 .owl-carousel.owl-theme.popular-items-cards.owl-loaded.owl-drag {
   display: flex;
   flex-direction: column;
+  /* width: 60%; */
+  overflow: hidden;
   align-items: center;
 }
 
@@ -826,6 +829,7 @@ Hero and Service Section Start
 
 /* .message::placeholder {
   position: absolute;
+
   width: 6.94vw;
   height: 2.5vh;
   left: 1.52vw;
@@ -992,7 +996,7 @@ Hero and Service Section Start
 .cancel-order,
 .submit-order {
   padding: 19px 25px;
-  width: 18.26%;
+  width: 210px;
   height: 58px;
   border: 0;
   background: #1AC073;
@@ -1210,7 +1214,9 @@ Responsive Codes
     background: #F7F8FA;
     padding: 105px 70px 0px 70px;
   }
-
+  .owl-stage-outer {
+    width: 36vw;
+  }
   /* .kitchen-cards {
     justify-content: center;
 } */
@@ -1252,9 +1258,16 @@ Responsive Codes
     flex-direction: column;
   }
 
+  .owl-stage-outer {
+    width: 66vw;
+  }
   .name-mail {
     width: 100%;
     margin: 0px 0px 3.125vh;
+  }
+
+  .heading{
+    line-height: 36px;
   }
 
   .message {
@@ -1309,4 +1322,35 @@ Responsive Codes
 .back-to-menu-btn{
   margin-bottom: 0px;
 }
+.video-main::before{
+  height: 25%;
+}
+.content{
+  object-fit: contain;
+}
+.video-main{
+  margin-top: 0px;
+}
+.form-section{
+  padding-top: 5vh;
+}
+.video-section{
+  padding: 0;
+}
+.submit-order,.cancel-order{
+  width: 170px;
+}
+}
+@media screen and (max-width: 380px) {
+  .section-kitchen{
+    padding: 105px 10px 0px;
+  }
+  .owl-stage-outer {
+    width: 75vw;
+  }
+}
+@media screen and (max-width: 325px) {
+  .owl-stage-outer {
+    width: 88vw;
+  }
 }
