@@ -20,7 +20,7 @@ body {
 } */
 body.body-mobilenav {
   overflow: hidden;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
 }
 
@@ -35,6 +35,8 @@ body.body-mobilenav {
   min-height: 100vh;
   height: 100%;
   color: #f3f0ff;
+  width: 100%;
+    overflow-x: hidden;
 }
 
 .header {
@@ -43,7 +45,7 @@ body.body-mobilenav {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100vw !important;
   padding: 26px 130px 32px;
   display: flex;
   justify-content: space-between;
@@ -55,16 +57,31 @@ body.body-mobilenav {
 .footer {
   width: 100vw;
   padding: 38px 129px 31px;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  /* justify-content: space-between; */
   /* gap: 35rem; */
-  align-items: center;
+  /* align-items: center; */
   background-color: #1AC073;
+  /* flex-wrap: wrap; */
 }
-
+.footer-main{
+  display: flex;
+    justify-content: space-between;
+    /* gap: 35rem; */
+    align-items: center;
+    background-color: #1AC073;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.footer-line{
+  /* display: flex;
+  justify-content: center; */
+  /* margin: 0 8.95vw 0 8.96vw; */
+  margin: 31px 0px 0px 0px;
+}
 .line {
-  /* width: 81.97vw; */
-  margin: 0 8.95vw 0 8.96vw;
+  width: 100%;
+  /* margin: 0 8.95vw 0 8.96vw; */
   height: 0px;
   height: 1px;
   background: #fff;
@@ -72,7 +89,8 @@ body.body-mobilenav {
 }
 
 .footer-div {
-  height: 17.12vh;
+  min-height: 17.12vh;
+  height: 100%;
   background-color: #1AC073;
 }
 
@@ -85,6 +103,7 @@ body.body-mobilenav {
   gap: 40px;
   list-style: none;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer-link:link,
@@ -107,7 +126,8 @@ body.body-mobilenav {
 
 .landing-input {
   display: flex;
-  width: 398px;
+  width: 100%;
+  max-width: 398px;
   height: 58px;
   block-size: fit-content;
   /* border-radius: 10px; */
@@ -207,6 +227,11 @@ Hero and Service Section Start
   height: 100%;
   padding: 250px 132px 35px;
   gap: 108px;
+  
+  display: flex;
+  /* align-items: flex-start; */
+  justify-content: space-between;
+
   /* align-items: flex-start; */
 }
 
@@ -749,26 +774,42 @@ Hero and Service Section Start
 }
 
 .form {
-  margin-left: 16.06vh;
+  /* margin-left: 16.06vh; */
+  width: 49%;
+  margin-bottom: 8.875vh;
 }
-
+.form-part{
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  align-items: center;
+}
 .form-pic {
-  margin-right: 16.18vh;
+  /* margin-right: 16.18vh; */
+  width: 39%;
+  height: 100%;
+}
+.form-pic img {
+  width: 100%;
 }
 
 .name-mail {
-  width: 20.834vw;
+  width: 49%;
   height: 7.25vh;
   text-indent: 1.52vw;
   /* gap: 1.11vw; */
 }
 
-.email {
+/* .email {
   margin-left: 1.11vw;
+} */
+.form-main{
+  display: flex;
+  justify-content: space-between;
 }
 
 .message {
-  width: 42.84vw;
+  width: 100%;
   height: 20.5vh;
   margin-top: 3.125vh;
 }
@@ -786,7 +827,7 @@ Hero and Service Section Start
   height: 7.25vh;
   margin-top: 2.75vh;
   text-align: center;
-  margin-bottom: 8.875vh;
+  /* margin-bottom: 8.875vh; */
 }
 
 .name-mail,
@@ -1098,10 +1139,86 @@ Responsive Codes
 /* Below 560px  */
 @media (max-width: 35em) {
   .header {
-    padding: 0 2.4rem;
+    padding: 20px 2.4rem 0px;
   }
 
   /* .header .logo {
     width: 60%;
   } */
+}
+
+
+/* mine  */
+@media screen and (max-width: 1000px) {
+  .navbar{
+    width: 100vw;
+    gap: 2.8rem;
+    justify-content: center;
+}
+}
+@media screen and (max-width: 950px) {
+  .section-hero {
+    flex-direction: column;
+    padding: 35px 132px 35px;
+  }
+}
+@media screen and (max-width: 815px) {
+  .section-kitchen {
+    width: 100vw;
+    height: auto;
+    background: #F7F8FA;
+    padding: 105px 70px 0px 70px;
+}
+  /* .kitchen-cards {
+    justify-content: center;
+} */
+}
+@media screen and (max-width: 700px) {
+  .kitchen-cards {
+    justify-content: center;
+}
+.footer-list {
+  margin: 20px 0px;
+}
+.form {
+  width: 80%;
+  margin-bottom: 2vh;
+}
+.form-pic {
+  width: 60%;
+  margin-bottom: 2vh;
+}
+.form-part {
+  width: 100%;
+  flex-direction: column;
+}
+}
+@media screen and (max-width: 650px) {
+  .footer{
+    padding:38px 50px 31px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .form-main {
+    flex-direction: column;
+}
+.name-mail {
+  width: 100%;
+  margin: 0px 0px 3.125vh;
+}
+.message {
+  margin-top: 0;
+}
+.submit-btn {
+  width: 40vw;
+}
+.section-hero {
+  padding: 35px 30px 35px;
+}
+.left-hero h1 {
+  font-size: 55px;
+  line-height: 60px;
+}
+
 }
